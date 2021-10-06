@@ -22,7 +22,7 @@ see https://docs.qmk.fm/#/feature_split_keyboard?id=setting-handedness
 for more options.
 */
 
-#define EE_HANDS
+#define MASTER_RIGHT
 
 //Add RGB underglow
 #define RGB_DI_PIN D3
