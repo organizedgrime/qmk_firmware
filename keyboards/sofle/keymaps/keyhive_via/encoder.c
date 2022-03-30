@@ -20,12 +20,21 @@
 #ifdef ENCODER_ENABLE
 
 void encoder_update_user(uint8_t index, bool clockwise) {
+    // The right half
     if (index == 1) {
         if (clockwise) {
             tap_code(KC_VOLU);
         } else {
             tap_code(KC_VOLD);
         }
+    }
+    // The left half
+    else if (index == 0) {
+      if (clockwise) {
+        tap_code(KC_MS_WH_DOWN);
+      } else {
+        tap_code(KC_MS_WH_UP);
+      }
     }
 }
 
